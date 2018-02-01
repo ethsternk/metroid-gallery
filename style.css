@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30);
+}
+
+#logo {
+    width: 50vw;
+    height: auto;
+    display: block;
+    margin: 2vw auto;
+}
+
+#photoboard {
+    font-size: 0;
+    display: flex;
+    flex-flow: column wrap;
+    height: 310vw;
+    align-content: space-between;
+    margin: 2vw;
+    border-top: .15vw solid rgb(225, 225, 225);
+    padding-top: 2vw;
+}
+
+#photoboard img {
+    width: 22.5vw;
+    height: auto;
+    margin-bottom: 2vw;
+}
+
+@media (max-width: 768px) {
+    #logo {
+        width: 75vw;
+        margin: calc(10vw / 3) auto;
+    }
+    #photoboard {
+        height: 1170vw;
+        margin: calc(10vw / 3);
+        border-top: .3vw solid rgb(225, 225, 225);
+        padding-top: calc(10vw / 3);
+    }
+    #photoboard img {
+        width: 45vw;
+        margin-bottom: calc(10vw / 3);
+    }
+}
